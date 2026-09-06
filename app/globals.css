@@ -155,11 +155,12 @@
 
 /* Right sidebar */
 .right-sidebar {
-  @apply no-scrollbar hidden h-screen max-h-screen flex-col overflow-y-scroll border-l border-gray-200 w-[355px];
+  @apply no-scrollbar hidden h-screen max-h-screen flex-col overflow-y-scroll border-l border-gray-200 w-[355px] xl:flex;
 }
 
 .profile-banner {
   @apply h-[120px] w-full bg-cover bg-no-repeat;
+  background-image: url('/icons/gradient-mesh.svg');
 }
 
 .profile {
@@ -221,11 +222,11 @@
 
 /* Bank Card */
 .bank-card {
-  @apply relative flex h-[190px] w-full max-w-[320px] justify-between rounded-[20px] border border-white backdrop-blur-[6px];
+  @apply relative flex h-[190px] w-full max-w-[320px] justify-between rounded-[20px] border border-white bg-bank-gradient backdrop-blur-[6px];
 }
 
 .bank-card_content {
-  @apply relative z-10 flex size-full max-w-[228px] flex-col justify-between rounded-l-[20px] bg-gray-700 px-5 pb-4 pt-5;
+  @apply relative z-10 flex size-full max-w-[228px] flex-col justify-between rounded-l-[20px] bg-transparent px-5 pb-4 pt-5;
 }
 
 .bank-card_icon {
@@ -378,5 +379,5 @@
 }
 
 .sidebar-label {
-  @apply text-base font-semibold max-xl:hidden;
+  @apply text-base font-semibold text-gray-700;
 }
