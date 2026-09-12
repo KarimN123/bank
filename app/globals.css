@@ -110,11 +110,11 @@
 
 /* Home */
 .home {
-  @apply no-scrollbar flex w-full flex-row max-xl:max-h-screen max-xl:overflow-y-scroll;
+  @apply no-scrollbar flex min-w-0 flex-1 flex-row max-xl:max-h-screen max-xl:overflow-y-scroll;
 }
 
 .home-content {
-  @apply no-scrollbar flex w-full flex-1 flex-col gap-8 px-5 sm:px-8 py-7 lg:py-12 xl:max-h-screen xl:overflow-y-scroll;
+  @apply no-scrollbar flex min-w-0 flex-1 flex-col gap-8 px-5 py-7 sm:px-8 lg:py-12 xl:max-h-screen xl:overflow-y-scroll;
 }
 
 .home-header {
@@ -122,7 +122,7 @@
 }
 
 .total-balance {
-  @apply flex w-full items-center gap-4 rounded-xl border border-gray-200 p-4 shadow-sm sm:gap-6 sm:p-6;
+  @apply flex w-full min-w-0 items-center gap-4 rounded-xl border border-gray-200 p-4 shadow-sm sm:gap-6 sm:p-6;
 }
 
 .total-balance-chart {
@@ -294,7 +294,7 @@
 }
 
 .form-btn {
-  @apply text-base rounded-lg border font-semibold text-white;
+  @apply text-base rounded-lg border bg-blue-600 font-semibold text-white hover:bg-blue-700;
 }
 
 .form-link {
